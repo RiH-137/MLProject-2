@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 from typing import List
 
 
@@ -27,7 +27,7 @@ setup(
     version=VERSION,
     author=AUTHOR,
     description="This model can predict the house price.",
-    packages=["housing"],                                                   #folder name
+    packages=find_packages(),                                         #return folder name or we can use ["housing"]
     install_requires=get_requirements_list()                                                                
 
 )
